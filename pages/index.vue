@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1 class="title">Podologische Praxis E. Sörensen</h1>
+    <h1 class="title">Zahnferien mit Lidia Dix</h1>
     <hr class="border-t-4 border-blue-500 rounded my-6">
 
     <ul v-if="posts.length > 0" class="owl-y">
