@@ -15,7 +15,7 @@ function getDynamicPaths (URLHashmap) {
       .readdirSync(`./content/${URLHashmap[url]}`)
       .map(file => {
         return {
-          route: `/${url}/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+          route: `/${url}/${file.slice(0, -5)}`, // Remove the .json from the end of the filename
           payload: require(`./content/${URLHashmap[url]}/${file}`),
         };
       })
