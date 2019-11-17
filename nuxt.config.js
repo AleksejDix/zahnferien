@@ -1,5 +1,32 @@
 
 const path = require('path');
+const fs = require('fs');
+
+const dynamicRoutes = getDynamicPaths({
+  'blog': 'blog/article',
+  'services': 'services/service'
+});
+
+
+function getDynamicPaths (URLHashmap) {
+  const routes = Object.keys(URLHashmap)
+    .map(url => {
+      return fs
+      .readdirSync(`./content/${URLHashmap[url]}`)
+      .map(file => {
+        return {
+          route: `/${url}/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
+          payload: require(`./content/${URLHashmap[url]}/${file}`),
+        };
+      })
+    })
+    .reduce((acc, val) => acc.concat(val), [])
+  return routes
+}
+
+
+
+
 export default {
 
   mode: 'universal',
@@ -84,16 +111,6 @@ export default {
     }
   },
   generate: {
-    routes: function() {
-      const fs = require('fs');
-      return fs
-        .readdirSync('./content/blog/posts')
-        .map(file => {
-          return {
-            route: `/blog/${file.slice(2, -5)}`, // Remove the .json from the end of the filename
-            payload: require(`./content/blog/posts/${file}`),
-          };
-        });
-    },
-  },
+    routes: dynamicRoutes
+  }
 }
