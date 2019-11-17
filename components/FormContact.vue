@@ -16,17 +16,17 @@
 
     <label class="block">
       <span class="text-gray-700">E-Mail</span>
-      <input name="email" v-model="form.email" type="email" class="form-input mt-1 block w-full" placeholder="max@muster.com"  autocomplete="email">
+      <input name="email" v-model="form.email" type="email" class="form-input mt-1 block w-full" placeholder="max@muster.ch"  autocomplete="email">
     </label>
 
     <label class="block">
       <span class="text-gray-700">Telefon</span>
-      <input required name="tel" v-model="form.tel" type="tel"  class="form-input mt-1 block w-full" placeholder="+4952816218444" autocomplete="tel">
+      <input required name="tel" v-model="form.tel" type="tel"  class="form-input mt-1 block w-full" placeholder="+41 79 00 00 000" autocomplete="tel">
     </label>
 
     <label class="block">
       <span class="text-gray-700">Nachricht</span>
-      <textarea name="text" v-model="form.text" class="form-textarea mt-1 block w-full" rows="3" placeholder="Ihr Wunschtermin"></textarea>
+      <textarea name="text" v-model="form.text" class="form-textarea mt-1 block w-full" rows="3" placeholder="Ihr Wunschtermin und Anliegen"></textarea>
     </label>
 
     <div class="flex mt-6">

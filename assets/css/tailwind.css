@@ -5,7 +5,7 @@
 @tailwind screens;
 
 html {
-  @apply bg-gray-100 font-medium border-t-4 border-orange-400
+  @apply bg-gray-100 font-medium
 }
 
 html,
@@ -29,13 +29,19 @@ h1 {
 }
 
 
-
-
 .primary {
-  @apply text-teal-400 fill-current;
+  @apply text-blue-400 fill-current;
 }
 .secondary {
-  @apply text-teal-900 fill-current;
+  @apply text-blue-900 fill-current;
+}
+
+.nuxt-link-exact-active  .primary {
+  @apply text-blue-400 fill-current;
+}
+
+.nuxt-link-exact-active  .secondary {
+  @apply text-blue-900 fill-current;
 }
 
 
@@ -49,7 +55,7 @@ h1 {
 }
 
 .markdown p {
-  @apply text-teal-900 leading-normal
+  @apply text-blue-900 leading-normal
 }
 
 .markdown img {
@@ -59,12 +65,12 @@ h1 {
 .markdown a:link,
 .markdown a:visited,
 .markdown a {
-  @apply text-teal-600
+  @apply text-blue-600
 }
 
 .markdown a:focus,
 .markdown a:hover {
-  @apply text-teal-600 underline
+  @apply text-blue-600 underline
 }
 
 .button {
@@ -83,4 +89,51 @@ h1 {
 }
 .page-enter, .page-leave-active {
   opacity: 0
+}
+
+
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.transition-fastest {
+  transition-duration: 75ms;
+}
+.transition-faster {
+  transition-duration: 100ms;
+}
+.transition-fast {
+  transition-duration: 150ms;
+}
+.transition-medium {
+  transition-duration: 200ms;
+}
+.transition-slow {
+  transition-duration: 300ms;
+}
+.transition-slower {
+  transition-duration: 500ms;
+}
+.transition-slowest {
+  transition-duration: 700ms;
+}
+
+.transition-all {
+  transition-property: all;
+}
+.transition-opacity {
+  transition-property: opacity;
+}
+.transition-transform {
+  transition-property: transform;
+}
+
+.focus-visible.focus-visible\:underline {
+  text-decoration: underline;
 }

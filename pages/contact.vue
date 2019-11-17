@@ -1,22 +1,18 @@
 <template>
   <div>
     <h1>Terminwunsch</h1>
-     <hr class="border-t-4 border-teal-500 rounded my-6">
+     <hr class="border-t-4 border-blue-500 rounded my-6">
 
     <div>
       <div class="markdown">
         <p>Wir stehen nach Terminvereinbarung auch abends und samstags zur Verfügung.</p>
-        <p>Nicht nur Diabetiker sind herzlich willkommen, auch ganz normale Füße werden mit großer Sorgfallt behandelt. Sie haben eine Frage rund um den Fuß, dann rufen Sie uns an  <a href="tel:052816218444">052816218444</a>  oder schreiben Sie uns eine <a href="mailto:info@podologie-bad-pyrmont.de">Mail</a> über das <a href="#formular">Kontaktforumular</a>.</p>
-
-        <p>Für einen Termin rufen Sie uns bitte an, damit wir den für Sie richtigen Termin schnellst möglich vereinbaren können.</p>
-
-        <p>Natürlich gilt das auch für Haus- und Heimbesuche.</p>
-
-        <p>
-          Da wir die Praxis als reine Bestellpraxis führen können wir auch individuell Termine anbieten.</p>
- <p>
-Für Neupatienten nehmen wir uns 60 min. Zeit, daher kann es zu Wartezeiten auf einen Aufnahmetermin kommen, bitte haben Sie hierfür Verständnis.</p>
-        </p>
+        <ul>
+          <li><Icon name="icon-check" class="mr-2"/>Kontaktieren Sie uns für kostenlose Beratung mit localen Preisen auf Deutsch.</li>
+          <li><Icon name="icon-check" class="mr-2"/>Holen Sie sich ein Angebot für Zahnpflege im Ausland inkl. Transport.</li>
+          <li><Icon name="icon-check" class="mr-2"/>Schreiben Sie und noch heute und erhalten Antworten auf Ihre Fragen. Montag bis Samstag um. 9-20</li>
+          <li><Icon name="icon-check" class="mr-2"/>Schweizer Natel Nummer: +41 79 50 95 048</li>
+        </ul>
+        <p>Oder füllen Sie das Formular aus und lassen Sie sich schnell ein unverbindliche Offerte erstellen:</p>
       </div>
       <section>
         <h2>
@@ -29,14 +25,14 @@ Für Neupatienten nehmen wir uns 60 min. Zeit, daher kann es zu Wartezeiten auf 
 </template>
 
 <script>
+
+import Icon from './../components/Icon'
 import FormContact from './../components/FormContact'
+
 export default {
   components: {
-    FormContact
+    FormContact,
+    Icon
   }
 }
 </script>
-
-<style>
-
-</style>

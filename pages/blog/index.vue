@@ -1,7 +1,7 @@
 <template>
   <div>
      <h1 class="title">Blog – Wissenswertes</h1>
-     <hr class="border-t-4 border-teal-500 rounded my-6">
+     <hr class="border-t-4 border-blue-500 rounded my-6">
   </div>
 </template>
 

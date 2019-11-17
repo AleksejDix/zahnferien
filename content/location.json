@@ -1,15 +1,15 @@
 {
-  "title": "Standort - Öffnungszeiten",
+  "title": "Öffnungszeiten",
   "location": "{\"type\":\"Point\",\"coordinates\":[9.2515759,51.9875304]}",
-  "adress": "Bombergallee 1 , Bad Pyrmont , Deutschland ",
-  "phone": "052816218444   ",
+  "adress": "Sonnentalstrasse 10, 8600 Dübendorf, Schweiz ",
+  "phone": "07 950 950 48",
   "workingdays": {
     "monday": "08:30–18:00",
     "tuesday": "08:30–18:00",
     "wednesday": "08:30–18:00",
     "thursday": "08:30–18:00",
     "friday": "08:30–18:00",
-    "saturday": "Geschlossen",
+    "saturday": "08:30–18:00",
     "sunday": "Geschlossen"
   }
 }

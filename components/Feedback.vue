@@ -1,9 +1,7 @@
 <template>
   <article>
     <div>
-      Ich habe selten jemanden gesehen wie Herr Sörensen, der so viel Spass an seinem Beruf hat.
-      Meine Frau und Ich nuzten Regelmässig die Dienstleistungen von der Podologischen Praxis E. Sörensen.
-
+      Schnell und effektiv :)
     </div>
     <Human>
       <div>
