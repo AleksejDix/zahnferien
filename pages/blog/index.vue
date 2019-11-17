@@ -11,6 +11,20 @@ export default {
     return {
       title: "Blog"
     }
+  },
+  async asyncData() {
+    const files = await require.context('~/content/blog/article/', false, /\.json$/)
+    console.log(files)
+    const list = files
+      .keys()
+      .map(key => {
+        const res = files(key);
+        res.slug = key.slice(2, -5); // remove ./ from beginnign and .json from the end
+        return res;
+      });
+    return {
+      list
+    }
   }
 }
 </script>

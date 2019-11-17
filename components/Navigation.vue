@@ -41,7 +41,7 @@
       <button class="button" @click="$emit('close')">
         <div class="flex items-center">
           <Icon name="icon-close-circle"/>
-          <span class="inline-flex ml-2">Menü schlie­ßen</span>
+          <span class="inline-flex ml-2">Menü schlie­ssen</span>
         </div>
       </button>
     </div>
@@ -69,10 +69,10 @@ export default {
           text: 'Dienstleistungen',
           icon: 'icon-widget-add'
         },
-        // blog: {
-        //   text: 'Blog',
-        //   icon: 'icon-click-target'
-        // },
+        blog: {
+          text: 'Wissenwertes',
+          icon: 'icon-click-target'
+        },
         contact: {
           text: 'Terminwunsch',
           icon: 'icon-chat-group'

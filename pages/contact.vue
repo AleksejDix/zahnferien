@@ -26,8 +26,8 @@
 
 <script>
 
-import Icon from './../components/Icon'
-import FormContact from './../components/FormContact'
+import Icon from '@/components/Icon'
+import FormContact from '@/components/FormContact'
 
 export default {
   components: {
